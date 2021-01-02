@@ -2,38 +2,42 @@
     border: 0.1rem solid white;
 }
 
+/* Universal Styles */
+
 html {
     font-size: 22px;
 
 }
 
 body {
+    width: 100%;
+    height: 100%;
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    justify-content: center;
 }
 
 header {
     display: inline-flex;
-    justify-content: space-between;
-    width: auto;
+    align-content: center;
+    width: 100%;
     height: 3.14rem;
     position: fixed;
-    align-content: center;
-    
+    top: 0;
+    left: 0;
 }
 
 nav {
-    
+    float: inline-end;
 }
 
 h1 {
     font-size: 2.27rem;
     font-family: 'Great Vibes', cursive; 
-    justify-items: start;
+    float: inline-start;
+    
     
 }
 
@@ -48,18 +52,47 @@ li {
     margin: 0.25rem;
 }
 
-.image-container {
+/* Mission Section */
+
+.banner {
     margin-top: 3.136rem;
     height: 700px;
     width: 1200px;
     background-image: url('./images/img-mission-background.webp');
     background-size: cover;
-    
 }
 
-.mission-banner {
+.mission {
     background-color: black;
     display: block;
     
     
 }
+
+/* Store Section */
+
+.large-container {
+    display: flex;
+    width: 85%;
+    vertical-align: middle;
+}
+
+.image-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.small-image {
+    width: 300px;
+    height: 200px;
+}
+
+/* Locations Section */
+
+
+
+/* Contact Section */
+
+
+
+/* Footer Section */
