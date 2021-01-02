@@ -2,7 +2,9 @@
     border: 0.1rem solid white;
 }
 
-/* Universal Styles */
+/* comments are included for changes made after checking solution files provided by Codecademy*/
+
+/*** Universal Styles ***/
 
 html {
     font-size: 22px;
@@ -10,82 +12,161 @@ html {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: "Helvetica", sans-serif;
+    /* remove declaration
     font-size: 1rem;
+    */
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    /* add new declarations */
+    text-align: center; 
+    margin: 0;
 }
 
+a {     /* add new rule */
+    color: seashell;
+}
+
+h2,
+h3,
+h4 {    /* add new rule */
+    margin: 0;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    /* align-content: center;  --remove declaration */
+    /* add new declarations */
+    justify-content: center;  
+    flex-wrap: wrap;  
+}
+
+/*** Header Section ***/
+
+/* --remove rule and replace with new one
 header {
     display: flex;
     justify-content: space-between;
+} */
+
+/* new header rule */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    align-items: center;
 }
 
+/* add new rule after replacing h1 heading with Tea Cozy logo */
+header img {  
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* remove rule and replace with new one
 nav {
     text-decoration: underline;
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+nav {
+    text-align: right;
+    flex-grow: 1;
 }
 
-span {
-
-}
-
+/* remove rule --replaced h1 with logo
 h1 {
     font-family: 'Great Vibes', cursive;
+} */
+
+/*** Main Section ***/
+
+/* add all declrations */
+.main {
+    padding-top: 69px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
 }
 
-main {
+/*** Mission Section ***/
+
+#mission {
+    height: 700px;
+    background-image: url('./images/img-mission-background.webp');
+    /* add new declaration */
+    padding-top: 70px;
+    /* --remove declarations
+    background-size: cover;
+    width: 90%;
+    */
     
 }
 
-.flex-container {
-   display: flex;
-   align-content: center;
-}
-
-/* Mission Section */
-
-#mission {
-    background-image: url('./images/img-mission-background.webp');
-    background-size: cover;
-    width: 90%;
-    height: 700px;
-}
-
-.content {
+#mission .content { /*corrected from .content to #mission .content based on solution */
+     /* add new declaration */
+     margin: auto;
     background-color: black;
+    width: 100%;
+    /* --remove declarations
     height: fit-content; 
     text-align: center;  
-    width: 100%;
     align-items: center;
+    */
+
 }
 
-/* Store Section */
+/*** Store Section ***/
 
+/* add declartions */
 #store {
-
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 70px;
 }
 
+/* --remove this rule
 .flex-container .items {
     width: 1000px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+*/
 
 .item {
+    /* --remove declaration 
     justify-items: center;
+    */
+    padding: 5px;
 }
 
-/* Locations Section */
-
-#locations {
-
+/* add new rule */
+.item img {
+    height: 200px;
+    margin: 10px;
+    display: block;
 }
 
+/* add new rule */
+.item span {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*** Locations Section ***/
+
+/* remove rule and replace with new one
 .flex-container .locations {
     display: flex;
     background-image: url('./images/img-locations-background.webp');
@@ -93,19 +174,53 @@ main {
     width: 90%;
     height: 500px;
 }
+*/
 
+/* add new rule */
+.flex-container.locations {
+    padding-top: 5px;
+}
+
+/* add all declarations */
+#locations {
+    background-image: url('./images/img-locations-background.webp');
+    height: 500px;
+    padding-top: 70px;
+}
+
+/* add new rule */
+#locations .flex-container {
+    margin: auto;
+    width: 1100px;
+}
+
+/* add all declarations */
 .location {
-
+    opacity: 1;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Contact Section */
 
+/* add declaration */
 #contact {
-
+    height: 200px;
 }
 
 
 /* Footer Section */
+
+/* add new rule */
+footer {
+    text-align: left;
+    padding-left: 20px;
+}
 
 .copyright {
 
