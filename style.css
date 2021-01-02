@@ -10,8 +10,6 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100%;
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
     color: seashell;
@@ -20,67 +18,72 @@ body {
 }
 
 header {
-    display: inline-flex;
-    align-content: center;
-    width: 100%;
-    height: 3.14rem;
-    position: fixed;
-    top: 0;
-    left: 0;
+  
 }
 
 nav {
-    float: inline-end;
-    list-style: none;
     text-decoration: underline;
-    display: inline-flex;
 }
 
 h1 {
-    font-size: 2.27rem;
-    font-family: 'Great Vibes', cursive; 
-    float: inline-start;  
+
+}
+
+main {
+    
 }
 
 .flex-container {
-    display: flex;
-    width: 85%;
-    vertical-align: middle;
+   
 }
 
 /* Mission Section */
 
-.flex-container .mission {
-    margin-top: 3.136rem;
-    height: 700px;
-    width: 1200px;
-    background-image: url('./images/img-mission-background.webp');
-    background-size: cover;
+#mission {
+
 }
 
-#mission {
-    background-color: black;
-    display: block;
+.content {
+
 }
 
 /* Store Section */
 
-.flex-container .items {
-    display: inline-flex;
-    flex-wrap: wrap;
+#store {
+
 }
 
-.item {
-    width: 300px;
-    height: 200px;
+.flex-container .items {
+
+}
+
+item {
+
 }
 
 /* Locations Section */
 
+#locations {
 
+}
+
+.flex-container .locations {
+
+}
+
+.location {
+
+}
 
 /* Contact Section */
 
+#contact {
+
+}
 
 
 /* Footer Section */
+
+.copyright {
+
+}
