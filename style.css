@@ -18,15 +18,23 @@ body {
 }
 
 header {
-  
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
     text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+
 }
 
 h1 {
-
+    font-family: 'Great Vibes', cursive;
 }
 
 main {
@@ -34,17 +42,25 @@ main {
 }
 
 .flex-container {
-   
+   display: flex;
+   align-content: center;
 }
 
 /* Mission Section */
 
 #mission {
-
+    background-image: url('./images/img-mission-background.webp');
+    background-size: cover;
+    width: 90%;
+    height: 700px;
 }
 
 .content {
-
+    background-color: black;
+    height: fit-content; 
+    text-align: center;  
+    width: 100%;
+    align-items: center;
 }
 
 /* Store Section */
@@ -54,11 +70,14 @@ main {
 }
 
 .flex-container .items {
-
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-item {
-
+.item {
+    justify-items: center;
 }
 
 /* Locations Section */
@@ -68,7 +87,11 @@ item {
 }
 
 .flex-container .locations {
-
+    display: flex;
+    background-image: url('./images/img-locations-background.webp');
+    background-size: cover;
+    width: 90%;
+    height: 500px;
 }
 
 .location {
