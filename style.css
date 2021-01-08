@@ -30,6 +30,7 @@ h4 {
     justify-content: center;  
     flex-wrap: wrap; 
     border: 2px solid purple; 
+    max-width: 1200px;
 }
 
 /*** Header Section ***/
@@ -61,26 +62,31 @@ nav {
 .main {
     padding-top: 69px;
     opacity: 0.9;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*** Mission Section ***/
 
 #mission {
+    max-width: 1200px;
     height: 700px;
     background-image: url('./images/img-mission-background.webp');
     padding-top: 70px;
+    background-size: cover;
+
 }
 
 #mission .content { 
-     margin: auto;
+    margin: auto;
     background-color: black;
-    width: 100%;
     border: 2px solid turquoise;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .content h2, .content h4 {
@@ -88,6 +94,13 @@ nav {
 }
 
 /*** Store Section ***/
+
+.flex-container .items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
 
 #store {
     width: 100%;
@@ -115,11 +128,12 @@ nav {
 
 /*** Locations Section ***/
 
-.flex-container.locations {
+.flex-container .locations {
     padding-top: 5px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 #locations {
@@ -129,11 +143,12 @@ nav {
     border: 2px solid white;
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
 }
 
 #locations .flex-container {
     margin: auto;
-    width: 1100px;
+    width: 92%;
 }
 
 .location {
