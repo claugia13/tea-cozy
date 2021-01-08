@@ -29,8 +29,7 @@ h4 {
     display: flex;
     justify-content: center;  
     flex-wrap: wrap; 
-    border: 2px solid purple; 
-    max-width: 1200px;
+    
 }
 
 /*** Header Section ***/
@@ -48,13 +47,11 @@ header {
 header img {  
     height: 50px;
     padding-left: 10px;
-    border: 2px solid turquoise;
 }
 
 nav {
     text-align: right;
     flex-grow: 1;
-    border: 2px solid turquoise;
 }
 
 /*** Main Section ***/
@@ -82,7 +79,6 @@ nav {
 #mission .content { 
     margin: auto;
     background-color: black;
-    border: 2px solid turquoise;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -110,7 +106,6 @@ nav {
 
 .item {
     padding: 5px;
-    border: 2px solid turquoise;
 }
 
 .item img {
@@ -133,22 +128,21 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    
 }
 
 #locations {
     background-image: url('./images/img-locations-background.webp');
-    height: 500px;
+    min-height: 500px;
     padding-top: 70px;
-    border: 2px solid white;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    width: 100%;
 }
 
 #locations .flex-container {
     margin: auto;
-    width: 92%;
+    
 }
 
 .location {
@@ -160,7 +154,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid turquoise;
 }
 
 /* Contact Section */
